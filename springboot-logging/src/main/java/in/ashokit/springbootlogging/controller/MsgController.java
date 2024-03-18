@@ -17,6 +17,7 @@ public class MsgController {
 
 	@GetMapping("/welcome")
 	public String getMsg() {
+		log.info("This massge is just for information");
 		return msgService.getWelcomeMsg();
 	}
 
